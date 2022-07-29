@@ -1,0 +1,8 @@
+stages:
+  - deno-test
+
+deno-test:
+  image: registry.netspective.io/netspective-infrastructure/engineering/build-essentials:latest
+  stage: deno-test
+  script:
+    - . dpo-test.sh

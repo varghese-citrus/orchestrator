@@ -1,0 +1,48 @@
+stages:
+#  - deno-validate
+  - robot
+
+Deno-Test:
+  image: hayd/deno:latest
+  stage: deno-validate
+  allow_failure: true
+  script:
+    - deno --version
+    - deno info
+    - deno test -A --unstable
+
+#Robot-Test:
+#  image: ubuntu:18.04
+#  stage: robot
+#  script:
+#    - pwd
+#    - ls -la
+#    - apt update && apt install python3 python3-pip python-pip firefox git -y
+#    - cp robot-automation-scripts/chromedriver robot-automation-scripts/geckodriver  /usr/bin/
+#    - pip install -r requirements.txt
+#    - git clone https://${GIT_USERNAME}:${GIT_ACCESS_TOKEN}@git.netspective.io/netspective/medigy-qa-automation.git
+#    - pwd
+#    - ls -la
+#    - cd medigy-qa-automation/MedigyRobotAutomationScripts 
+#    - pwd
+    #To execute robot script one by one
+#    - date=$(date '+%Y-%m-%d')
+#    - date_time=$(date "+%Y.%m.%d-%H.%M.%S")
+#    - script_list=($(ls -1 *.robot))
+#    - script_count=${#script_list[@]}
+#    - script_count=`expr $script_count - 1`
+#    - ls -la
+  #  - mkdir -p Reports/${script_list[$i]}/$date/$date_time;
+  #  - robot -T -d Reports/${script_list[$i]}/$date/$date_time RegressionTest_Search.robot
+  #  - robot -T -d Reports RegressionTest_Search.robot
+#    - for (( i=0; i<=${script_count}; i++ ));
+#      do 
+#         mkdir -p Reports/${script_list[$i]}/$date/$date_time;
+#         echo -e "robot -T -d Reports/${script_list[$i]}/$date/$date_time ${script_list[$i]}";
+#         robot -T -d Reports/${script_list[$i]}/$date/$date_time ${script_list[$i]};
+#      done
+  
+#  artifacts:
+#    when: always
+#    paths:
+#    - medigy-qa-automation/MedigyRobotAutomationScripts/Reports/

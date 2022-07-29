@@ -1,0 +1,10 @@
+
+
+HTML content inspection issue in https://www.medigy.com/brief/daily/offerings/trending:
+    The URL found with 404 status /topic/frost-sullivan-medical-devices-imaging
+The URL found with 404 status /topic/mesh-clinical-alarms
+The URL found with 404 status /topic/mesh-cardiology
+The URL found with 404 status /topic/mesh-risk-assessment
+
+HTML content inspection issue in https://www.medigy.com/brief/daily/offerings/updated:
+    The URL found with 404 status /topic/himss-telehealth/-telemedicine-solutions

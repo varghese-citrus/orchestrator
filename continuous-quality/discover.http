@@ -1,0 +1,23 @@
+# This file is used by the Visual Studio Code REST Client extension (humao.rest-client).
+# If REST Client is installed, you will be able to run these requests in VS Code.
+
+###########
+# Feeds RSS
+
+https://www.medigy.com/feed/latest/index.xml
+
+
+##########
+# News RSS
+
+https://www.medigy.com/news/index.xml
+
+###############
+# Offerings RSS
+
+https://www.medigy.com/offering/index.xml
+
+############
+# Events RSS
+
+https://www.medigy.com/events/index.xml
